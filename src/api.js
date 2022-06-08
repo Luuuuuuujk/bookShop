@@ -12,6 +12,8 @@ axios.interceptors.request.use(config=>{
     //最后必须返回一个config
     return config
   });
+
+  
 // axios接收拦截器
 axios.interceptors.response.use(response=>{
     if(response.status==200){
